@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>DigiMall_AllPages</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Ionicons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,900">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fffcf5;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top shadow-sm navigation-clean-search">
+        <div class="container"><a class="navbar-brand" href="index.html"
+                style="width: 136px;height: 40px;font-family: Pacifico, cursive;font-size: 30px;margin-bottom: 8px;"
+                onclick="goToHome()">DigiMall</a><button data-toggle="collapse" class="navbar-toggler"
+                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <form class="form-inline mr-auto" target="_self">
+                    <div class="form-group" style="margin-left: 30px;"><label for="search-field"><i class="fa fa-search"
+                                style="margin-left: -29px;"></i></label><input class="form-control search-field"
+                            type="search" data-bs-hover-animate="pulse" id="search-field" name="search"
+                            placeholder="Looking for what?" style="padding-left: 6px;"><a
+                            class="btn btn-primary border-dark shadow-sm" role="button" data-bs-hover-animate="pulse"
+                            style="background-color: rgba(255,249,219,0.5);color: #2a2a2a;border-radius: 0px 5px 5px 0px;"
+                            href="SearchResult.html">Search</a></div>
+                </form>
+                <div class="btn-group d-none" role="group"><button class="btn btn-primary border-dark" type="button"
+                        style="background-color: rgba(255,249,219,0.5);color: #2a2a2a;">Login</button><button
+                        class="btn btn-primary border-dark" type="button"
+                        style="color: #2a2a2a;background-color: rgba(255,249,219,0.5);">Sign up</button></div>
+                <div class="d-none" data-bs-hover-animate="pulse" style="width: 100px;height: 35px;"
+                    onclick="goToWishlist()"><img class="float-left" src="assets/img/icons8-wish-list-100.png"
+                        style="width: 35px;height: 35px;">
+                    <p class="float-right"
+                        style="font-size: 14px;font-family: Roboto, sans-serif;width: 60px;padding-top: 8px;">Wish List
+                    </p>
+                </div>
+                <div data-bs-hover-animate="pulse" id="cart" class="margins" style="width: 100px;height: 35px;"
+                    onclick="goToCart()"><img class="float-left" src="assets/img/icons8-favorite-cart-100.png"
+                        style="width: 35px;height: 35px;">
+                    <p class="float-right"
+                        style="font-size: 14px;font-family: Roboto, sans-serif;width: 59px;padding-top: 8px;">Cart</p>
+                </div>
+                <div data-bs-hover-animate="pulse" class="margins" style="width: 100px;height: 35px;"
+                    onclick="goToProfile()"><img class="float-left" src="assets/img/icons8-male-user-100%20(1).png"
+                        style="height: 35px;">
+                    <p class="float-right"
+                        style="font-size: 14px;font-family: Roboto, sans-serif;width: 58px;padding-top: 8px;">Profile
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+   
+    
+    <div class="float-right"
+        style="width: 90%;background-color: rgba(255,249,219,0.7);margin-right: 5%;margin-top: 80px;">
+        <div class="container" style="width: 100%;">
+            <div class="row" style="width: 100%;">
+
+
+
+                <div
+                    class="col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0">
+                    <div class="shadow-sm float-left"
+                        style="width: 100%;height: 400px;margin-top: 60px;background-color: #fffcf5;">
+                        <div class="mx-auto" style="width: 100%;height: 80%;">
+
+
+                            <div class="float-right"
+                                style="background-image: url(&quot;assets/img/icons8-more-48.png&quot;);width: 24px;height: 24px;background-size: contain;margin-top: 2%;margin-right: 8%;">
+                                <a class="btn" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1"
+                                    href="#collapse-1" role="button" style="width: 100%;height: 100%;"></a>
+                                <div class="collapse" id="collapse-1" style="background-color: #f8f8f8;width: 150px;">
+                                    <div role="group" class="btn-group-vertical shadow-sm"
+                                        style="width: 100%;background-color: #f8f8f8;">
+                                        <button class="btn text-left"type="button">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                        </div>
+                        <div class="" style="width: 100%;height: 20%; margin-left: 2%;">
+                            Assign to staff:
+                            <select class="" name="address" style="margin-bottom: 0px;" required>
+                                <option hidden disabled selected value> -- select a staff -- </option>
+                                <option value="1">Riyadh</option>
+                                <option value="2" >Dammam</option>
+                                <option value="3">Jeddah</option>
+                                <option value="4">Khobar</option>
+                                <option value="5">Dhahran</option>
+                                <option value="6">Abha</option>
+                              </select> 
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0">
+                    <div class="shadow-sm float-left"
+                        style="width: 100%;height: 400px;margin-top: 60px;background-color: #fffcf5;">
+                        <div class="mx-auto" style="width: 100%;height: 80%;">
+
+
+                            <div class="float-right"
+                                style="background-image: url(&quot;assets/img/icons8-more-48.png&quot;);width: 24px;height: 24px;background-size: contain;margin-top: 2%;margin-right: 8%;">
+                                <a class="btn" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1"
+                                    href="#collapse-1" role="button" style="width: 100%;height: 100%;"></a>
+                                <div class="collapse" id="collapse-1" style="background-color: #f8f8f8;width: 150px;">
+                                    <div role="group" class="btn-group-vertical shadow-sm"
+                                        style="width: 100%;background-color: #f8f8f8;">
+                                        <button class="btn text-left"type="button">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                        </div>
+                        <div class="" style="width: 100%;height: 20%; margin-left: 2%;">
+                            Assign to staff:
+                            <select class="" name="address" style="margin-bottom: 0px;" required>
+                                <option hidden disabled selected value> -- select a staff -- </option>
+                                <option value="1">Riyadh</option>
+                                <option value="2" >Dammam</option>
+                                <option value="3">Jeddah</option>
+                                <option value="4">Khobar</option>
+                                <option value="5">Dhahran</option>
+                                <option value="6">Abha</option>
+                              </select> 
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div
+                    class="col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-1 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-0">
+                    <div class="shadow-sm float-left"
+                        style="width: 100%;height: 400px;margin-top: 60px;background-color: #fffcf5;">
+                        <div class="mx-auto" style="width: 100%;height: 80%;">
+
+
+                            <div class="float-right"
+                                style="background-image: url(&quot;assets/img/icons8-more-48.png&quot;);width: 24px;height: 24px;background-size: contain;margin-top: 2%;margin-right: 8%;">
+                                <a class="btn" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1"
+                                    href="#collapse-1" role="button" style="width: 100%;height: 100%;"></a>
+                                <div class="collapse" id="collapse-1" style="background-color: #f8f8f8;width: 150px;">
+                                    <div role="group" class="btn-group-vertical shadow-sm"
+                                        style="width: 100%;background-color: #f8f8f8;">
+                                        <button class="btn text-left"type="button">Done</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                            <p
+                                style="font-size: 20px;font-family: Roboto, sans-serif;font-weight: normal;font-style: normal;color: #2a2a2a;width: 100%;margin-top: 2%;margin-left: 2%;">
+                                KFUPM</p>
+                        </div>
+                        <div class="" style="width: 100%;height: 20%; margin-left: 2%;">
+                            Assign to staff:
+                            <select class="" name="address" style="margin-bottom: 0px;" required>
+                                <option hidden disabled selected value> -- select a staff -- </option>
+                                <option value="1">Riyadh</option>
+                                <option value="2" >Dammam</option>
+                                <option value="3">Jeddah</option>
+                                <option value="4">Khobar</option>
+                                <option value="5">Dhahran</option>
+                                <option value="6">Abha</option>
+                              </select> 
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="php_div"></div>
+
+
+    <div class="text-center float-right"
+        style="height: 100px;width: 90%;background-color: rgba(255,249,219,0.5);margin-right: 5%;margin-top: 0;">
+        <div class="btn-group" role="group" style="margin-top: 36px;"><button class="btn btn-primary border-dark"
+                type="button" style="background-color: rgba(255,249,219,0.5);color: #2a2a2a;">Back</button><button
+                class="btn btn-primary border-dark" type="button"
+                style="color: #2a2a2a;background-color: rgba(255,249,219,0.5);">Next</button></div>
+    </div>
+
+    <!--   
+    <script>
+        $.ajax({
+            url: "http://localhost/HTML/Session/indexSession.php",
+            method: "POST",
+            session: {},
+            success: function (session) {
+                $.ajax({
+                    url: "http://localhost/HTML/php/ReportAdmin.php",
+                    type: "POST",
+                    data: { session: session },
+                    success: function (data) {
+                        document.getElementById("php_div").innerHTML = data;
+                    }
+                })
+            }
+        })
+
+
+
+    </script>
+-->
+
+
+
+
+
+
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/Wishlist.js"></script>
+</body>
+
+</html>
